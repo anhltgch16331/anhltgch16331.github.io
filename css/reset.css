@@ -1,0 +1,127 @@
+body {
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #999;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+:focus {
+    outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+}
+
+/* default font size */
+.fa {
+    font-size: 16px;
+}
+
+/* Override the bootstrap defaults */
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+a {
+    color: #808080;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FF6000;
+}
+
+legend {
+    font-size: 14px;
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 5px 0px 5px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #666;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+label {
+    font-size: 14px;
+}
+
+.box {
+    margin: 0 -10px;
+}
+
+select.form-control,
+textarea.form-control,
+input[type="text"].form-control,
+input[type="password"].form-control,
+input[type="datetime"].form-control,
+input[type="datetime-local"].form-control,
+input[type="date"].form-control,
+input[type="month"].form-control,
+input[type="time"].form-control,
+input[type="week"].form-control,
+input[type="number"].form-control,
+input[type="email"].form-control,
+input[type="url"].form-control,
+input[type="search"].form-control,
+input[type="tel"].form-control,
+input[type="color"].form-control {
+    font-size: 13px;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+/* Hide Arrows From Input Number start */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Hide Arrows From Input Number end */
+

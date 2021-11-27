@@ -1,0 +1,717 @@
+.header-top {
+    background: #000;
+    padding: 10px 0;
+}
+
+.flag {
+    width: 22px;
+    height: 21px;
+    display: inline-block;
+}
+
+.flag-vn {
+    background: url(../img/vietnam.png) no-repeat;
+}
+
+.flag-us {
+    background: url(../img/united-states.png) no-repeat;
+}
+
+.flag-cn {
+    background: url(../img/china.png) no-repeat;
+}
+
+.flag-kr {
+    background: url(../img/south-korea.png) no-repeat;
+}
+
+.flag-jp {
+    background: url(../img/japan.png) no-repeat;
+}
+
+.logo img {
+    max-width: 50%;
+}
+
+.language {
+    cursor: context-menu;
+    white-space: nowrap;
+}
+
+.language>a>i {
+    vertical-align: middle;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-right,
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-left {
+    justify-content: flex-start;
+}
+
+.top-right {
+    justify-content: flex-end;
+}
+
+.line-down {
+    width: 2px;
+    height: 24px;
+    background: #999;
+    margin: 0 10px -3px;
+}
+
+.mail,
+.phone-number {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.mail-text,
+.phone-text {
+    margin-left: 5px;
+}
+
+.nav-link {
+    padding: 0;
+    color: #999;
+}
+
+.nav-link.show,
+.nav-link:hover {
+    color: #FF6000;
+}
+
+.account-text {
+    margin-left: 10px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #FF6000;
+}
+
+.dropdown-menu {
+    font-size: 14px;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+
+.cart>a {
+    white-space: nowrap;
+}
+
+/* slider start */
+
+.carousel-item {
+    max-height: 850px;
+}
+
+.carousel-indicators [data-bs-target] {
+    /* background-color: #FF6000; */
+    height: 5px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
+/* slider end */
+
+.language-mobile {
+    display: none;
+}
+
+.language-mobile .flag {
+    position: relative;
+    top: 3px;
+}
+
+.language-mobile span {
+    cursor: pointer;
+}
+
+.search-wrap {
+    margin: 30px 0;
+    position: relative;
+    border-radius: 5px;
+}
+
+.search-wrap .search-input {
+    border-radius: 5px;
+    border: transparent;
+    box-shadow: 0px 2px 12px -2px #c9c9c9;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-wrap .btn-search {
+    background: #FF6000;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 30px;
+}
+
+
+
+/* tabs start */
+
+.tabs {
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    background: white;
+    padding: 50px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 2px 12px -2px #c9c9c9;
+    border-radius: 5px;
+}
+
+.tabs ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.tabs ul li {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    flex: 1;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.tabs ul li.active a {
+    border-bottom: #FF6000 3px solid;
+    color: #FF6000;
+}
+
+.tabs ul li a {
+    border-bottom: #808080 3px solid;
+    padding-bottom: 10px;
+}
+
+.tabs ul li a:hover {
+    border-bottom: #FF6000 3px solid;
+    transition: .2s linear;
+}
+
+.tabs ul li a span {
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.tabs .content {
+    margin-top: 30px;
+    max-height: 375px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.tabs .content section {
+    transition: .2s linear;
+}
+
+/* tabs end */
+
+/* content tabs start*/
+
+.pick-content {
+    margin: 15px 0;
+}
+
+.pick-content p {
+    margin-bottom: 0;
+}
+
+.pick-content strong {
+    color: red;
+}
+
+.pick-content .input-spect {
+    display: flex;
+    align-items: center;
+}
+
+.pick-content .input-spect>span {
+    margin: 0 20px;
+}
+
+.pick-content .input-spect .input-spect-wrap {
+    width: 250px;
+    position: relative;
+}
+
+.pick-content .input-spect .input-spect-wrap span:first-child {
+    position: absolute;
+    left: 5px;
+    top: 3px;
+}
+
+.pick-content .input-spect .input-spect-wrap span:last-child {
+    position: absolute;
+    right: 7px;
+    top: 3px;
+}
+
+.pick-content .input-spect .input-spect-wrap input {
+    padding-left: 40px;
+    padding-right: 25px;
+    border: #ced4da 1px solid;
+    border-radius: .25rem;
+}
+
+/* content tabs end */
+
+/* list product start*/
+
+.table-product-wrap>h2 {
+    font-weight: bold;
+    font-size: 25px;
+    color: #FF6000;
+}
+
+.product-element {
+    border-top: #ddd solid 1px;
+    border-bottom: #ddd solid 1px;
+    padding: 1.5rem 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-element .product-img>img {
+    border-radius: 5px;
+    max-width: 150px;
+    max-height: 150px;
+    width: 150px;
+}
+
+.product-element .product-name {
+    font-size: 24px;
+}
+
+.product-element .product-name>a {
+    color: #000;
+    position: relative;
+}
+
+.product-element .product-name>a:hover {
+    color: #FF6000;
+}
+
+.product-element .product-contents {
+    position: relative;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+
+#product-list {
+    width: 100%;
+}
+
+#product-list tr th {
+    color: #FF6000;
+    width: 25%;
+    border-bottom: #ddd 1px solid;
+}
+
+#product-list tr:first-child td {
+    padding-top: 10px;
+}
+
+#product-list tr td {
+    color: #000;
+}
+
+#product-list tr td input[type='number'] {
+    height: 30px;
+    border: 1px solid #e8e8e8;
+    width: 55px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.group-btn {
+    display: flex;
+    align-items: center;
+}
+
+.group-btn>button[type="submit"] {
+    font-size: 20px;
+}
+
+.group-btn>button[type="submit"]:hover {
+    color: #FF6000;
+    margin-bottom: 5px;
+    transition: .2s linear;
+}
+
+/* list product end */
+
+.foot-main-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: #ddd solid 1px;
+}
+
+.foot-main-wrap .result {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FF6000;
+}
+
+.foot-main-wrap .result>* {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 19px;
+}
+
+.foot-main-wrap .result .accept {
+    color: #198754;
+}
+
+.foot-main-wrap .result .warning {
+    color: #ffc107;
+}
+
+.foot-main-wrap .result .danger {
+    color: #dc3545;
+}
+
+.btn-compare {
+    background: #FF6000;
+    color: #fff;
+}
+
+.btn-submit:hover,
+.btn-search:hover,
+.btn-compare:hover {
+    background: #fff;
+    color: #FF6000;
+    border: #FF6000 1px solid;
+    transition: .2s linear;
+}
+
+/* checkbox start*/
+
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2.5px 2.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.container-checkbox input:checked~.checkmark {
+    background-color: #ff862d;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Create a custom checkbox */
+.checkmark-dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: #ddd solid 1px;
+}
+
+/* When the checkbox is checked, add a white background */
+.container-checkbox input:checked~.checkmark-dot {
+    background-color: white;
+    border: #ddd solid 1px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-dot:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark-dot:after {
+    width: 10px;
+    height: 10px;
+    left: 4px;
+    top: 4px;
+    background-color: #ff862d;
+    border-radius: 50%;
+}
+
+/* checkbox end */
+.product-name>a:hover .product-detail {
+    display: block;
+}
+
+.product-detail {
+    z-index: 99;
+    background: #fff;
+    position: fixed;
+    width: 850px;
+    box-shadow: 0px 2px 12px -2px #c9c9c9;
+    padding: 50px;
+    display: none;
+    font-size: 14px;
+}
+
+.product-detail>table {
+    width: 100%;
+}
+
+.product-detail>table tr th {
+    font-weight: bold;
+    color: #000;
+}
+
+.product-detail>table tr td {
+    padding: 10px;
+    color: #000;
+}
+
+/* pagination start */
+
+.page-link {
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 20px;
+}
+
+.page-link:first-child,
+.page-link:last-child {
+    width: auto;
+    height: auto;
+}
+
+.page-item:first-child .page-link {
+    border-radius: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+.page-item:last-child .page-link {
+    border-radius: 0;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+.page-item:not(:first-child) .page-link {
+    margin-left: 5px;
+}
+
+.page-link:hover {
+    color: #fff;
+    border-color: #FF6000;
+    background-color: #FF6000;
+}
+
+.page-item.active .page-link {
+    color: #fff;
+    background-color: #FF6000;
+    border-color: #FF6000;
+}
+
+/* pagination end */
+
+/* footer start */
+
+footer {
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+
+footer h1 {
+    color: #fff;
+    display: block;
+}
+
+footer .head-wrap {
+    display: flex;
+}
+
+.take-mail-wrap {
+    position: relative;
+    margin-bottom: 30px;
+    width: 250px;
+}
+
+.mail-input {
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+    padding: 5px 20px;
+    border: transparent;
+    box-shadow: 0px 2px 12px -2px #c9c9c9;
+}
+
+.btn-submit {
+    background-color: #FF6000;
+    color: #fff;
+    height: 34px;
+    padding: 5px 30px;
+}
+
+.take-mail-wrap .btn-submit {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    background-color: #FF6000;
+    color: #fff;
+    height: 34px;
+    padding: 5px 30px;
+}
+
+.icon-facebook {
+    width: 38px;
+    height: 37px;
+    background: url(../img/facebook.png);
+    display: inline-block;
+}
+
+.icon-instagram {
+    width: 36px;
+    height: 38px;
+    background: url(../img/instagram.png);
+    display: inline-block;
+}
+
+.icon-youtube {
+    width: 33px;
+    height: 25px;
+    background: url(../img/youtube.png);
+    display: inline-block;
+}
+
+.icon-zalo {
+    width: 36px;
+    height: 38px;
+    background: url(../img/zalo.png);
+    display: inline-block;
+}
+
+.social-wrap {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer hr {
+    background: #FF6000;
+    height: 2px !important;
+    opacity: 1;
+}
+
+.mid-wrap p {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.foot-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-wrap>p {
+    display: inline-block;
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.foot-wrap img {
+    display: inline-block;
+    width: 135px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+/* footer end */
