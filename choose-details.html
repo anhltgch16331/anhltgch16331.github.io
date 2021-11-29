@@ -169,8 +169,8 @@
         <div class="container">
             <div class="tabs">
                 <ul>
-                    <li class="active"><a href="./index.html"><span>Chọn nhanh</span></a></li>
-                    <li><a href="./choose-details.html"><span>Chọn chi tiết</span></a></li>
+                    <li><a href="./index.html"><span>Chọn nhanh</span></a></li>
+                    <li class="active"><a href="./choose-details.html"><span>Chọn chi tiết</span></a></li>
                     <li><a href=""><span>Tài liệu</span></a></li>
                     <li><a href=""><span>Hướng dẫn</span></a></li>
                     <li><a href=""><span>Liên hệ</span></a></li>
@@ -180,7 +180,7 @@
                 </ul>
                 <div class="content">
                     <div class="row">
-                        <section class="col-md-12 col-lg-6 quick-pick">
+                        <section class="col-md-12 col-lg-6 detail-pick">
                             <div class="pick-content">
                                 <h1>Ứng dụng</h1>
                                 <p>Đèn sẽ được lắp đặt ở đâu? Vui lòng chọn một khu vực.</p>
@@ -202,47 +202,41 @@
                             </div>
 
                             <div class="pick-content">
-                                <h1>Công suất mong muốn?</h1>
-                                <p>Nhập công suất(W) trong khoảng bạn mong muốn.</p>
-                                <select class="form-select">
-                                    <option selected>Công suất</option>
-                                    <option value="">30W</option>
-                                    <option value="">20W</option>
-                                    <option value="">9W</option>
-                                </select>
+                                <h1>Kích thước</h1>
+                                <p>Kích thước không gian chiếu sáng.</p>
+                                <div class="input-spect">
+                                    <input class="form-control" type="number" placeholder="Chiều dài (m)">
+                                    <span>x</span> <input class="form-control" type="number"
+                                        placeholder="Chiều rộng (m)"> <span>x</span> <input class="form-control"
+                                        type="number" placeholder="Chiều cao (m)">
+                                </div>
                             </div>
                         </section>
-                        <section class="col-md-12 col-lg-6 quick-pick">
+                        <section class="col-md-12 col-lg-6 detail-pick">
                             <div class="pick-content">
-                                <h1>Thương hiệu bạn quan tâm?</h1>
-                                <p>Bạn muốn tập trung tìm kiếm sản phẩm của thương hiệu nào?</p>
-                                <select class="form-select">
-                                    <option selected>Thương hiệu</option>
-                                    <option value="">Ledgoes</option>
-                                    <option value="">Philips</option>
-                                    <option value="">Ledgrand</option>
-                                    <option value="">Osram</option>
-                                    <option value="">Schneider</option>
-                                    <option value="">Kentom</option>
-                                    <option value="">Ledvance</option>
-                                    <option value="">Mennekes</option>
-                                    <option value="">Maxspid</option>
-                                </select>
-                            </div>
-                            <div class="pick-content">
-                                <h1>Màu sắc</h1>
-                                <p>Chọn màu ánh sáng bạn muốn.</p>
-                                <select class="form-select">
-                                    <option selected>Màu sắc</option>
-                                    <option value="">2700K (Trắng Ấm)</option>
-                                    <option value="">4000K (Trung tính)</option>
-                                    <option value="">6500K (Trắng lạnh)</option>
-                                </select>
+                                <h1>Làm thế nào để tính toán nhanh số lượng bộ đèn trong tư vấn thiết kế chiếu sáng?
+                                    Liệu với loại đèn lựa chọn, số lượng bộ đèn tính toán có đảm bảo được yêu cầu độ rọi
+                                    sáng mong muốn, đảm đảm bảo yêu cầu tiết kiệm điện? <br> Để giúp các bạn có thể tính
+                                    toán
+                                    nhanh, chúng tôi xây dựng công cụ tính toán nhanh số lượng bộ đèn.
+                                    Hãy thực hiện theo theo hướng dẫn dưới đây:</h1>
+                                <p>• Chọn vị trí ứng dụng của đèn</p>
+                                <p>• Nhập kích thước khu vực cần chiếu sáng (m)</p>
+                                <p>• Tôi cần bao nhiêu đèn led downlight cho mỗi phòng?</p>
+                                <p>• Làm thế nào để tính toán bao nhiêu đèn là cần thiết trong một phòng ngủ?</p>
+                                <p>• Lượng lumen cần thiết trên mỗi mét vuông cho phòng trưng bày?</p>                        
                             </div>
                         </section>
                     </div>
                     <div class="row">
-                        <div class="d-flex justify-content-end">
+                        <div class="d-flex justify-content-between">
+                            <div class="result">
+                                <h4>Kết quả </h4>
+                                <span>Số bộ đèn:</span>
+                                <p>0</p>
+                                <span>Mật độ công suất:</span>
+                                <p>0</p>
+                            </div>
                             <button class="btn btn-submit">Chọn</button>
                         </div>
                     </div>

@@ -231,13 +231,43 @@
 
 .tabs .content {
     margin-top: 30px;
-    max-height: 375px;
+    /* max-height: 375px; */
     overflow-y: auto;
     overflow-x: hidden;
+    position: relative;
 }
 
 .tabs .content section {
     transition: .2s linear;
+}
+
+.tabs .content .btn-submit {
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.tabs .content .result {
+    display: flex;
+    align-items: center;
+}
+
+.tabs .content .result h4 {
+    color: #FF6000;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.tabs .content .result span {
+    margin: 0 5px;
+    margin-left: 15px;
+    color: #000;
+    font-weight: bold;
+}
+
+.tabs .content .result p {
+    color: #dc3545;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 /* tabs end */
@@ -343,7 +373,7 @@
 #product-list tr th {
     color: #FF6000;
     width: 25%;
-    border-bottom: #ddd 1px solid;
+    /* border-bottom: #ddd 1px solid; */
 }
 
 #product-list tr:first-child td {

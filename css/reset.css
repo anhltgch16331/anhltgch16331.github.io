@@ -105,6 +105,13 @@ input[type="color"].form-control {
     -webkit-appearance: none;
 }
 
+button,
+select.form-select:focus,
+input.form-control:focus {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
 .mt-30 {
     margin-top: 30px;
 }
@@ -125,3 +132,28 @@ input[type=number] {
 
 /* Hide Arrows From Input Number end */
 
+/* Custom Scrollbar start*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FF6000;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #FF6000;
+}
+
+/* Custom Scrollbar end */
