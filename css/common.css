@@ -257,14 +257,8 @@
     margin-bottom: 0;
 }
 
-.tabs .content .result span {
-    margin: 0 5px;
-    margin-left: 15px;
-    color: #000;
-    font-weight: bold;
-}
-
 .tabs .content .result p {
+    margin-left: 15px;
     color: #dc3545;
     font-weight: bold;
     margin-bottom: 0;
@@ -550,7 +544,7 @@
     border-radius: 50%;
 }
 
-.checkmark:hover .check-note{
+.checkmark:hover .check-note {
     visibility: visible;
     opacity: 1;
     transition: .2s linear;
