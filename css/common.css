@@ -764,3 +764,26 @@ footer hr {
 }
 
 /* footer end */
+
+/* contact start*/
+
+.tabs .contact h4 {
+    font-weight: bold;
+    display: inline-block;
+    color: #FF6000;
+}
+
+.tabs .contact h3 {
+    color: #FF6000;
+    font-weight: bold;
+}
+
+.tabs .contact span {
+    color: #000;
+}
+
+.tabs .contact .map {
+    margin-top: 20px;
+}
+
+/* contact end */
