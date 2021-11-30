@@ -63,7 +63,6 @@ $(forgotPwBtn).click(function () {
 });
 
 // Quantity input
-
 var inputQuantity = $("#input-quantity");
 var btnPlus = $("#plus-quantity");
 var btnMinus = $("#minus-quantity");
@@ -78,7 +77,6 @@ $(btnMinus).click(function () {
 });
 
 // Product preview
-
 ! function () {
     var s = document.querySelectorAll(".product-preview-wrap");
     if (s.length) {
@@ -91,6 +89,20 @@ $(btnMinus).click(function () {
                 this.classList.add("active"), s[r].querySelector(this.getAttribute("href")).classList.add("active")
             }
 
-        }(e)
+        }(e);
     }
-}()
+}();
+
+// button left right
+var btnPrev = $(".btn-prev");
+var btnNext = $(".btn-next");
+var slider = $(".slider-product");
+var wrap = $(".product-thumblist");
+
+$(btnNext).click(function(){
+    wrap.scrollRight +=200;
+})
+
+$(btnPrev).click(function(){
+    wrap.scrollRight -=200;
+})

@@ -904,7 +904,7 @@ footer hr {
 }
 
 .product-detail-table tr td #minus-quantity:hover,
-.product-detail-table tr td #plus-quantity:hover{
+.product-detail-table tr td #plus-quantity:hover {
     background: #FF6000;
     color: #fff;
 }
@@ -1013,10 +1013,13 @@ footer hr {
     opacity: 0;
     z-index: 1;
     padding: 10px;
+
 }
 
 .product-preview .product-preview-item>img {
     border-radius: 5px;
+    height: 500px;
+    width: 100%;
 }
 
 .product-preview .product-preview-item.active {
@@ -1026,17 +1029,32 @@ footer hr {
 }
 
 .product-thumblist {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 185px;
+    position: relative;
+    margin: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 
-.product-thumblist .product-thumblist-item {
+.product-thumblist::-webkit-scrollbar {
+    display: none;
+}
+
+.product-thumblist .slider-product {
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: .3s left ease-in-out;
+}
+
+.product-thumblist .slider-product .product-thumblist-item {
     display: inline-block;
     position: relative;
-    width: 10rem;
-    height: 9rem;
-    margin: .625rem;
+    width: 160px;
+    height: 100%;
+    margin-top: 15px;
+    margin-left: 40px;
     transition: border-color .2s ease-in-out;
     border: 1px solid #eee;
     border-radius: 5px;
@@ -1045,13 +1063,19 @@ footer hr {
     padding: 10px;
 }
 
-.product-thumblist .product-thumblist-item:hover,
-.product-thumblist .product-thumblist-item.active {
+.product-thumblist .slider-product .product-thumblist-item>img {
+    /* max-width: 140px;
+    max-height: 120px; */
+}
+
+.product-thumblist .slider-product .product-thumblist-item:hover,
+.product-thumblist .slider-product .product-thumblist-item.active {
     border-color: #FF6000;
 }
 
 .btn-prev,
 .btn-next {
+    cursor: pointer;
     font-size: 20px;
     border-radius: 50%;
     color: #eee;
@@ -1060,6 +1084,17 @@ footer hr {
     border: 1px solid #eee;
     text-align: center;
     line-height: 25px;
+    position: absolute;
+    top: 40%;
+    z-index: 11;
+}
+
+.btn-next {
+    right: 0;
+}
+
+.btn-prev {
+    left: 0;
 }
 
 .btn-next>i {
@@ -1068,6 +1103,7 @@ footer hr {
 
 .btn-prev:hover,
 .btn-next:hover {
+    color: #FF6000;
     border-color: #FF6000;
 }
 
