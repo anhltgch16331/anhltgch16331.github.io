@@ -198,21 +198,177 @@
             </div>
         </nav>
         <!-- breadcrumb end-->
-        <div class="main-detail">
+        <section class="main-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-lg-6 left-site">
-                        <img src="" alt="">
-                        <div class="sub-img">
-                            
+                    <!-- product preview -->
+                    <div class="col-lg-6 left-site">
+                        <div class="product-preview-wrap">
+                            <div class="product-preview">
+                                <div class="product-preview-item active" id="product1">
+                                    <img src="./img/product/product1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="product-preview-item" id="product2">
+                                    <img src="./img/product/product2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="product-preview-item" id="product3">
+                                    <img src="./img/product/product3.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="product-thumblist">
+                                <a href="" class="btn-prev">
+                                    <i class="fas fa-angle-left"></i>
+                                </a>
+                                <a class="product-thumblist-item" href="#product1">
+                                    <img src="./img/product/product1.png" alt="" class="img-fluid">
+                                </a>
+                                <a class="product-thumblist-item" href="#product2">
+                                    <img src="./img/product/product2.png" alt="" class="img-fluid">
+                                </a>
+                                <a class="product-thumblist-item" href="#product3">
+                                    <img src="./img/product/product3.png" alt="" class="img-fluid">
+                                </a>
+                                <a href="" class="btn-next">
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6 right-site">
+                    <!-- product details -->
+                    <div class="col-lg-6 col-xl-5 right-site">
+                        <h1 class="product-name">BÓNG LED BULB TRÒN LEDGOES LGCL PCE G1</h1>
+                        <table class="product-detail-table">
+                            <tr>
+                                <th>Mã sản phẩm:</th>
+                                <td>LEDGOES LGCL</td>
+                            </tr>
+                            <tr>
+                                <th>Điện áp:</th>
+                                <td>220V - 240V</td>
+                            </tr>
+                            <tr>
+                                <th>Góc chiếu:</th>
+                                <td>160o</td>
+                            </tr>
+                            <tr>
+                                <th>IP:</th>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <th>Đui:</th>
+                                <td>E27</td>
+                            </tr>
+                            <tr>
+                                <th>CRI:</th>
+                                <td>>80</td>
+                            </tr>
+                            <tr>
+                                <th>Tuổi thọ:</th>
+                                <td>15000h</td>
+                            </tr>
+                            <tr>
+                                <th>Đóng gói:</th>
+                                <td>100 hộp/thùng</td>
+                            </tr>
+                            <tr>
+                                <th>Bảo hành:</th>
+                                <td>24 tháng</td>
+                            </tr>
+                            <tr>
+                                <th>Công suất:</th>
+                                <td>
+                                    <select class="form-control" name="" id="">
+                                        <option value="" selected>Chọn</option>
+                                        <option value="">6W</option>
+                                        <option value="">9W</option>
+                                        <option value="">12W</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Màu ánh sáng:</th>
+                                <td>
+                                    <select class="form-control" name="" id="">
+                                        <option value="" selected>Chọn</option>
+                                        <option value="">3000K (Trắng ấm)</option>
+                                        <option value="">6500K (Trắng lạnh)</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Số lượng</th>
+                                <td>
+                                    <span class="fas fa-minus" id="minus-quantity"></span>
+                                    <input type="number" class="form-control" name="" id="input-quantity" value="1">
+                                    <span class="fas fa-plus" id="plus-quantity"></span>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="button-wrap mt-3">
+                            <a class="btn btn-submit">
+                                <i class="fas fa-cart-plus"></i>
+                                THÊM VÀO GIỎ HÀNG
+                            </a>
+                            <a href="tel:0848617569" class="btn btn-submit">LIÊN HỆ MUA SỈ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="tabs-product">
+                        <input type="radio" id="tab1" name="tab-control" checked>
+                        <input type="radio" id="tab2" name="tab-control">
+                        <input type="radio" id="tab3" name="tab-control">
+                        <input type="radio" id="tab4" name="tab-control">
+                        <ul>
+                            <li>
+                                <label for="tab1" role="button">
+                                    <span>Mô tả</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="tab2" role="button">
+                                    <span>Thông số khác</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="tab3" role="button">
+                                    <span></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="tab4" role="button">
+                                    <span></span>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="content">
+                            <section>
+                                <h2>Mô tả</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit a fugiat quis
+                                    perferendis provident illum quas consectetur cumque autem. Lorem ipsum dolor sit
+                                    amet consectetur adipisicing elit. Sapiente excepturi voluptas non! Consequuntur
+                                    odio autem nobis cum voluptatum dicta architecto doloribus illo officiis, quisquam
+                                    vero unde accusamus velit ut repellendus.</p>
+                            </section>
+                            <section>
+                                <h2>Thông số khác</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates eaque id, autem
+                                    sunt est beatae, quibusdam culpa earum in minima, cumque magni! Perspiciatis
+                                    voluptatum totam ea provident neque voluptatem sapiente corrupti explicabo
+                                    temporibus inventore, soluta laboriosam sunt eius quam mollitia possimus quisquam
+                                    dolorum accusantium atque labore delectus? Cupiditate, sunt ullam?</p>
+                            </section>
+                            <section>
 
+                            </section>
+                            <section>
+
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="container">

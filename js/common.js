@@ -9,7 +9,7 @@ window.onmousemove = function (e) {
     }
 };
 
-// add active register, login, forgot pw
+// Add active register, login, forgot pw
 
 // register
 var registerBtn = $('#register');
@@ -61,3 +61,36 @@ $(forgotPwBtn).click(function () {
         }
     }
 });
+
+// Quantity input
+
+var inputQuantity = $("#input-quantity");
+var btnPlus = $("#plus-quantity");
+var btnMinus = $("#minus-quantity");
+
+$(btnPlus).click(function () {
+    var a = $(inputQuantity).val();
+    0 == isNaN(a) ? $(inputQuantity).val(parseInt(a) + 1) : $(inputQuantity).val(1)
+});
+$(btnMinus).click(function () {
+    var a = $(inputQuantity).val();
+    0 == isNaN(a) && parseInt(a) > 1 ? $(inputQuantity).val(parseInt(a) - 1) : $(inputQuantity).val(1)
+});
+
+// Product preview
+
+! function () {
+    var s = document.querySelectorAll(".product-preview-wrap");
+    if (s.length) {
+        for (var e = 0; e < s.length; e++) ! function (r) {
+            for (var a = s[r].querySelectorAll(".product-thumblist-item"), n = s[r].querySelectorAll(".product-preview-item"), t = 0; t < a.length; t++) a[t].addEventListener("click", o);
+
+            function o(e) {
+                e.preventDefault();
+                for (var t = 0; t < a.length; t++) n[t].classList.remove("active"), a[t].classList.remove("active");
+                this.classList.add("active"), s[r].querySelector(this.getAttribute("href")).classList.add("active")
+            }
+
+        }(e)
+    }
+}()
