@@ -1,18 +1,23 @@
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 /* xxl */
 @media screen and (max-width: 1400px) {
-    .similar-product-desktop{
+    .similar-product-desktop {
         display: none;
     }
 
-    .similar-product-mobile{
+    .similar-product-mobile {
         display: block;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* xl */
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+    .main-detail .left-site {
+        order: 2;
+        margin-top: 25px;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 /* lg */
