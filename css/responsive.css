@@ -1,6 +1,14 @@
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 /* xxl */
-@media screen and (max-width: 1400px) {}
+@media screen and (max-width: 1400px) {
+    .similar-product-desktop{
+        display: none;
+    }
+
+    .similar-product-mobile{
+        display: block;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* xl */
@@ -21,6 +29,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* md */
 @media screen and (max-width: 768px) {
+
+
     .language-mobile {
         display: flex;
     }
