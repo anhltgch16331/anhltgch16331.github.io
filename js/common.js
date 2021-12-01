@@ -77,32 +77,26 @@ $(btnMinus).click(function () {
 });
 
 // Product preview
-! function () {
-    var s = document.querySelectorAll(".product-preview-wrap");
-    if (s.length) {
-        for (var e = 0; e < s.length; e++) ! function (r) {
-            for (var a = s[r].querySelectorAll(".product-thumblist-item"), n = s[r].querySelectorAll(".product-preview-item"), t = 0; t < a.length; t++) a[t].addEventListener("click", o);
-
-            function o(e) {
-                e.preventDefault();
-                for (var t = 0; t < a.length; t++) n[t].classList.remove("active"), a[t].classList.remove("active");
-                this.classList.add("active"), s[r].querySelector(this.getAttribute("href")).classList.add("active")
-            }
-
-        }(e);
-    }
-}();
+let thumbnails = document.getElementsByClassName('thumbnail');
+let activeImages = document.getElementsByClassName('active');
+for (var i = 0; i < thumbnails.length; i++) {
+    thumbnails[i].addEventListener('click', function () {
+        if (activeImages.length > 0) {
+            activeImages[0].classList.remove('active');
+        }
+        this.classList.add('active');
+        document.getElementById('featured').src = this.src;
+    });
+}
 
 // button left right
-var btnPrev = $(".btn-prev");
-var btnNext = $(".btn-next");
-var slider = $(".slider-product");
-var wrap = $(".product-thumblist");
+let buttonRight = document.getElementById('slideRight');
+let buttonLeft = document.getElementById('slideLeft');
 
-$(btnNext).click(function(){
-    wrap.scrollRight +=200;
-})
+buttonLeft.addEventListener('click', function () {
+    document.getElementById('slider').scrollLeft -= 200;
+});
 
-$(btnPrev).click(function(){
-    wrap.scrollRight -=200;
-})
+buttonRight.addEventListener('click', function () {
+    document.getElementById('slider').scrollLeft += 200;
+});
