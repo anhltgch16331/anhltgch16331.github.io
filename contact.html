@@ -104,23 +104,36 @@
                                 <form action="">
                                     <div class="form-action" id="formRegister">
                                         <small>Vui lòng điền đầy đủ thông tin</small>
-                                        <label for="userName">Họ & tên</label>
-                                        <input type="text" class="form-control" id="userName"
-                                            placeholder="Nguyễn Văn A">
-                                        <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email"
-                                            placeholder="example@mail.com">
-                                        <label for="phone">Số điện thoại</label>
-                                        <input type="number" class="form-control" id="phone" placeholder="0912345678">
-                                        <label for="accoutName">Tên đăng nhập</label>
-                                        <input type="text" class="form-control" id="accoutName"
-                                            placeholder="nguyenvana">
-                                        <label for="password">Mật khẩu</label>
-                                        <input type="password" class="form-control" id="password"
-                                            placeholder="password">
-                                        <label for="rePassword">Nhập lại mật khẩu</label>
-                                        <input type="password" class="form-control" id="rePassword"
-                                            placeholder="re-password">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-lg-6">
+                                                <label for="userName">Họ & tên</label>
+                                                <input type="text" class="form-control" id="userName"
+                                                    placeholder="Nguyễn Văn A">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="example@mail.com">
+                                                <label for="phone">Số điện thoại</label>
+                                                <input type="number" class="form-control" id="phone"
+                                                    placeholder="0912345678">
+                                                <label for="role">Loại tài khoản</label>
+                                                <select class="form-control" id="role">
+                                                    <option value="">Người dùng</option>
+                                                    <option value="">Đại lý</option>
+                                                    <option value="">Nhà phân phối</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-12 col-lg-6">
+                                                <label for="accoutName">Tên đăng nhập</label>
+                                                <input type="text" class="form-control" id="accoutName"
+                                                    placeholder="nguyenvana">
+                                                <label for="password">Mật khẩu</label>
+                                                <input type="password" class="form-control" id="password"
+                                                    placeholder="password">
+                                                <label for="rePassword">Nhập lại mật khẩu</label>
+                                                <input type="password" class="form-control" id="rePassword"
+                                                    placeholder="re-password">
+                                            </div>
+                                        </div>
                                         <div class="d-flex justify-content-end">
                                             <button class="btn btn-submit">Đăng ký</button>
                                         </div>
@@ -225,7 +238,7 @@
         </div>
 
         <div class="container">
-            <div class="tabs">
+            <div class="tabs mb-5">
                 <ul>
                     <li><a href="./index.html"><span>Chọn nhanh</span></a></li>
                     <li><a href="./choose-details.html"><span>Chọn chi tiết</span></a></li>
@@ -307,403 +320,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container mt-30">
-                <div class="table-product-wrap">
-                    <h2>Sản phẩm</h2>
-                    <!-- product list start-->
-                    <div class="product-element">
-                        <div class="product-img">
-                            <img src="./img/product/product1.png" alt="">
-                        </div>
-                        <div class="product-contents">
-                            <h1 class="product-name">
-                                <a href="">ĐÈN SIMPLITZ FLOOD LIGHT V2 OSRAM
-                                    <div class="product-detail">
-                                        <table>
-                                            <tr>
-                                                <th>Mã sản phẩm:</th>
-                                                <td>OSRAM PSS SHP R V2</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Hiệu suất phát quang:</th>
-                                                <td>130lm/W</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Góc chiếu:</th>
-                                                <td>9o, 15o, 25o, 40o</td>
-                                            </tr>
-                                            <tr>
-                                                <th>CRI:</th>
-                                                <td>>70</td>
-                                            </tr>
-                                            <tr>
-                                                <th>IP:</th>
-                                                <td>66</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Tuổi thọ:</th>
-                                                <td>50000h</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Bảo hành:</th>
-                                                <td>2 năm</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Màu ánh sáng:</th>
-                                                <td>3000K (Trắng ấm), 4000K (Trung tính), 5700K (Trắng lạnh)</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </a>
-                            </h1>
-
-                            <table id="product-list">
-                                <thead>
-                                    <th>Công suất</th>
-                                    <th>Quang thông</th>
-                                    <th>Số lượng</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>50W</td>
-                                        <td>1000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="group-btn">
-                            <label class="container-checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark">
-                                    <div class="check-note">
-                                        <p>Chọn để so sánh (Tối đa 3 sản phẩm)</p>
-                                    </div>
-                                </span>
-                            </label>
-                            <button type="submit" class="btn">
-                                <i class="fas fa-cart-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-element">
-                        <div class="product-img">
-                            <img src="./img/product/product2.png" alt="">
-                        </div>
-                        <div class="product-contents">
-                            <h1 class="product-name">
-                                <a href="">ĐÈN SIMPLITZ FLOOD LIGHT V2 OSRAM
-                                    <div class="product-detail">
-                                        <table>
-                                            <tr>
-                                                <th>Mã sản phẩm:</th>
-                                                <td>OSRAM PSS SHP R V2</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Hiệu suất phát quang:</th>
-                                                <td>130lm/W</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Góc chiếu:</th>
-                                                <td>9o, 15o, 25o, 40o</td>
-                                            </tr>
-                                            <tr>
-                                                <th>CRI:</th>
-                                                <td>>70</td>
-                                            </tr>
-                                            <tr>
-                                                <th>IP:</th>
-                                                <td>66</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Tuổi thọ:</th>
-                                                <td>50000h</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Bảo hành:</th>
-                                                <td>2 năm</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Màu ánh sáng:</th>
-                                                <td>3000K (Trắng ấm), 4000K (Trung tính), 5700K (Trắng lạnh)</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </a>
-                            </h1>
-                            <table id="product-list">
-                                <thead>
-                                    <th>Công suất</th>
-                                    <th>Quang thông</th>
-                                    <th>Số lượng</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>25W</td>
-                                        <td>500lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>50W</td>
-                                        <td>1000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>100W</td>
-                                        <td>2000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>150W</td>
-                                        <td>3000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>200W</td>
-                                        <td>4000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>200W</td>
-                                        <td>4000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="group-btn">
-                            <label class="container-checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark">
-                                    <div class="check-note">
-                                        <p>Chọn để so sánh (Tối đa 3 sản phẩm)</p>
-                                    </div>
-                                </span>
-                            </label>
-                            <button type="submit" class="btn">
-                                <i class="fas fa-cart-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-element">
-                        <div class="product-img">
-                            <img src="./img/product/product3.png" alt="">
-                        </div>
-                        <div class="product-contents">
-                            <h1 class="product-name">
-                                <a href="">ĐÈN SIMPLITZ FLOOD LIGHT V2 OSRAM
-                                    <div class="product-detail">
-                                        <table>
-                                            <tr>
-                                                <th>Mã sản phẩm:</th>
-                                                <td>OSRAM PSS SHP R V2</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Hiệu suất phát quang:</th>
-                                                <td>130lm/W</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Góc chiếu:</th>
-                                                <td>9o, 15o, 25o, 40o</td>
-                                            </tr>
-                                            <tr>
-                                                <th>CRI:</th>
-                                                <td>>70</td>
-                                            </tr>
-                                            <tr>
-                                                <th>IP:</th>
-                                                <td>66</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Tuổi thọ:</th>
-                                                <td>50000h</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Bảo hành:</th>
-                                                <td>2 năm</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Màu ánh sáng:</th>
-                                                <td>3000K (Trắng ấm), 4000K (Trung tính), 5700K (Trắng lạnh)</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </a>
-                            </h1>
-                            <table id="product-list">
-                                <thead>
-                                    <th>Công suất</th>
-                                    <th>Quang thông</th>
-                                    <th>Số lượng</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>50W</td>
-                                        <td>1000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>150W</td>
-                                        <td>3000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>200W</td>
-                                        <td>4000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="group-btn">
-                            <label class="container-checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark">
-                                    <div class="check-note">
-                                        <p>Chọn để so sánh (Tối đa 3 sản phẩm)</p>
-                                    </div>
-                                </span>
-                            </label>
-                            <button type="submit" class="btn">
-                                <i class="fas fa-cart-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-element">
-                        <div class="product-img">
-                            <img src="./img/product/product4.png" alt="">
-                        </div>
-                        <div class="product-contents">
-                            <h1 class="product-name">
-                                <a href="">ĐÈN LED DOWNLIGHT ÂM TRẦN LEDGOES
-                                    <div class="product-detail">
-                                        <table>
-                                            <tr>
-                                                <th>Mã sản phẩm:</th>
-                                                <td>OSRAM PSS SHP R V2</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Hiệu suất phát quang:</th>
-                                                <td>130lm/W</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Góc chiếu:</th>
-                                                <td>9o, 15o, 25o, 40o</td>
-                                            </tr>
-                                            <tr>
-                                                <th>CRI:</th>
-                                                <td>>70</td>
-                                            </tr>
-                                            <tr>
-                                                <th>IP:</th>
-                                                <td>66</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Tuổi thọ:</th>
-                                                <td>50000h</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Bảo hành:</th>
-                                                <td>2 năm</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Màu ánh sáng:</th>
-                                                <td>3000K (Trắng ấm), 4000K (Trung tính), 5700K (Trắng lạnh)</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </a>
-                            </h1>
-                            <table id="product-list">
-                                <thead>
-                                    <th>Công suất</th>
-                                    <th>Quang thông</th>
-                                    <th>Số lượng</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>6.5W</td>
-                                        <td>1000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>9W</td>
-                                        <td>2000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>150W</td>
-                                        <td>3000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>200W</td>
-                                        <td>4000lm</td>
-                                        <td><input type="number" value="0" name="" id="quantity"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="group-btn">
-                            <label class="container-checkbox">
-                                <input type="checkbox">
-                                <span class="checkmark">
-                                    <div class="check-note">
-                                        <p>Chọn để so sánh (Tối đa 3 sản phẩm)</p>
-                                    </div>
-                                </span>
-                            </label>
-                            <button type="submit" class="btn">
-                                <i class="fas fa-cart-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- product list end -->
-                    <div class="foot-main-wrap">
-                        <div class="result">
-                            <span>Tổng số quang thông đã chọn:</span>
-                            <p class="accept">2900lm</p>
-                            <!-- accept: green -->
-                            <!-- warning: yellow -->
-                            <!-- danger: red -->
-                        </div>
-
-                        <a href="" class="btn btn-compare">
-                            <span>So sánh</span>
-                        </a>
-                    </div>
-
-                    <nav class="mb-5" aria-label="Page navigation">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="First">
-                                    <span aria-hidden="true">First</span>
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&lt;</span>
-                                </a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&gt;</span>
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Last">
-                                    <span aria-hidden="true">Last</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                </div>
-            </div>
+        </div>
     </main>
     <footer>
         <div class="container">

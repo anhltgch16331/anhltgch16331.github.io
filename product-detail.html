@@ -104,23 +104,36 @@
                                 <form action="">
                                     <div class="form-action" id="formRegister">
                                         <small>Vui lòng điền đầy đủ thông tin</small>
-                                        <label for="userName">Họ & tên</label>
-                                        <input type="text" class="form-control" id="userName"
-                                            placeholder="Nguyễn Văn A">
-                                        <label for="emailRs">Email</label>
-                                        <input type="email" class="form-control" id="emailRs"
-                                            placeholder="example@mail.com">
-                                        <label for="phone">Số điện thoại</label>
-                                        <input type="number" class="form-control" id="phone" placeholder="0912345678">
-                                        <label for="accoutNameRs">Tên đăng nhập</label>
-                                        <input type="text" class="form-control" id="accoutNameRs"
-                                            placeholder="nguyenvana">
-                                        <label for="passwordRs">Mật khẩu</label>
-                                        <input type="password" class="form-control" id="passwordRs"
-                                            placeholder="password">
-                                        <label for="rePassword">Nhập lại mật khẩu</label>
-                                        <input type="password" class="form-control" id="rePassword"
-                                            placeholder="re-password">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-lg-6">
+                                                <label for="userName">Họ & tên</label>
+                                                <input type="text" class="form-control" id="userName"
+                                                    placeholder="Nguyễn Văn A">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="example@mail.com">
+                                                <label for="phone">Số điện thoại</label>
+                                                <input type="number" class="form-control" id="phone"
+                                                    placeholder="0912345678">
+                                                <label for="role">Loại tài khoản</label>
+                                                <select class="form-control" id="role">
+                                                    <option value="">Người dùng</option>
+                                                    <option value="">Đại lý</option>
+                                                    <option value="">Nhà phân phối</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-12 col-lg-6">
+                                                <label for="accoutName">Tên đăng nhập</label>
+                                                <input type="text" class="form-control" id="accoutName"
+                                                    placeholder="nguyenvana">
+                                                <label for="password">Mật khẩu</label>
+                                                <input type="password" class="form-control" id="password"
+                                                    placeholder="password">
+                                                <label for="rePassword">Nhập lại mật khẩu</label>
+                                                <input type="password" class="form-control" id="rePassword"
+                                                    placeholder="re-password">
+                                            </div>
+                                        </div>
                                         <div class="d-flex justify-content-end">
                                             <button class="btn btn-submit">Đăng ký</button>
                                         </div>
@@ -302,6 +315,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- tabs product descriptions, specifications-->
                 <div class="row">
                     <div class="tabs-product">
                         <input type="radio" id="tab1" name="tab-control" checked>
@@ -332,20 +346,47 @@
                         </ul>
                         <div class="content">
                             <section>
-                                <h2>Mô tả</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit a fugiat quis
-                                    perferendis provident illum quas consectetur cumque autem. Lorem ipsum dolor sit
-                                    amet consectetur adipisicing elit. Sapiente excepturi voluptas non! Consequuntur
-                                    odio autem nobis cum voluptatum dicta architecto doloribus illo officiis, quisquam
-                                    vero unde accusamus velit ut repellendus.</p>
+                                <p>Chiếu sáng/trang trí nhà ở, văn phòng, nhà xưởng, trung tâm thương mại....</p>
+                                <img src="./img/descripstion.png" class="img-fluid" alt="">
                             </section>
                             <section>
-                                <h2>Thông số khác</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates eaque id, autem
-                                    sunt est beatae, quibusdam culpa earum in minima, cumque magni! Perspiciatis
-                                    voluptatum totam ea provident neque voluptatem sapiente corrupti explicabo
-                                    temporibus inventore, soluta laboriosam sunt eius quam mollitia possimus quisquam
-                                    dolorum accusantium atque labore delectus? Cupiditate, sunt ullam?</p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Công suất</th>
+                                        <td>6W</td>
+                                        <td>9W</td>
+                                        <td>12W</td>
+                                        <td>18W</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Quang thông</th>
+                                        <td>480lm</td>
+                                        <td>760lm</td>
+                                        <td>1000lm</td>
+                                        <td>1600lm</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Đường kính</th>
+                                        <td>120mm</td>
+                                        <td>135mm</td>
+                                        <td>170mm</td>
+                                        <td>220mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lỗ khoét</th>
+                                        <td>100mm</td>
+                                        <td>120mm</td>
+                                        <td>155mm</td>
+                                        <td>205</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Giá bán lẻ đề xuất</th>
+                                        <td>166.000 VND</td>
+                                        <td>216.000 VND</td>
+                                        <td>266.000 VND</td>
+                                        <td>336.000 VND</td>
+                                    </tr>
+                                </table>
                             </section>
                             <section>
 
@@ -354,6 +395,65 @@
 
                             </section>
                         </div>
+                    </div>
+                </div>
+                <!-- Similar product -->
+                <div class="row">
+                    <div id="similarProduct" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="">
+                                    <img src="./img/product/product3.png" class="d-block w-100" alt="...">
+                                </a>
+                                <a href="">
+                                    <img src="./img/product/product2.png" class="d-block w-100" alt="...">
+                                </a>
+                                <a href="">
+                                    <img src="./img/product/product1.png" class="d-block w-100" alt="...">
+                                </a>
+                                <a href="">
+                                    <img src="./img/product/product4.png" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="">
+                                    <img src="./img/product/product4.png" class="d-block w-100" alt="...">
+                                </a>
+                                <a href="">
+                                    <img src="./img/product/product3.png" class="d-block w-100" alt="...">
+                                </a>
+                                <a href="">
+                                    <img src="./img/product/product2.png" class="d-block w-100" alt="...">
+                                </a>
+                                <a href="">
+                                    <img src="./img/product/product4.png" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="">
+                                    <img src="./img/product/product1.png" class="d-block w-100" alt="...">
+                                </a>
+                                <a href="">
+                                    <img src="./img/product/product4.png" class="d-block w-100" alt="...">
+                                </a>
+                                <a href="">
+                                    <img src="./img/product/product3.png" class="d-block w-100" alt="...">
+                                </a>
+                                <a href="">
+                                    <img src="./img/product/product4.png" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#similarProduct"
+                            data-bs-slide="prev">
+                            <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#similarProduct"
+                            data-bs-slide="next">
+                            <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
