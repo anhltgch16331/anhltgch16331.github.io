@@ -100,72 +100,9 @@
                                 </ul>
                             </div> -->
                             <div class="user">
-                                <span id="register">Đăng ký</span>
-                                <form action="">
-                                    <div class="form-action" id="formRegister">
-                                        <small>Vui lòng điền đầy đủ thông tin</small>
-                                        <div class="row">
-                                            <div class="col-sm-12 col-lg-6">
-                                                <label for="userName">Họ & tên</label>
-                                                <input type="text" class="form-control" id="userName"
-                                                    placeholder="Nguyễn Văn A">
-                                                <label for="email">Email</label>
-                                                <input type="email" class="form-control" id="email"
-                                                    placeholder="example@mail.com">
-                                                <label for="phone">Số điện thoại</label>
-                                                <input type="number" class="form-control" id="phone"
-                                                    placeholder="0912345678">
-                                                <label for="role">Loại tài khoản</label>
-                                                <select class="form-control" id="role">
-                                                    <option value="">Người dùng</option>
-                                                    <option value="">Đại lý</option>
-                                                    <option value="">Nhà phân phối</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-sm-12 col-lg-6">
-                                                <label for="accoutName">Tên đăng nhập</label>
-                                                <input type="text" class="form-control" id="accoutName"
-                                                    placeholder="nguyenvana">
-                                                <label for="password">Mật khẩu</label>
-                                                <input type="password" class="form-control" id="password"
-                                                    placeholder="password">
-                                                <label for="rePassword">Nhập lại mật khẩu</label>
-                                                <input type="password" class="form-control" id="rePassword"
-                                                    placeholder="re-password">
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-end">
-                                            <button class="btn btn-submit">Đăng ký</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                <a href="./register.html" id="register">Đăng ký</a>
                                 <span>/</span>
-                                <span id="login">Đăng nhập</span>
-                                <form action="">
-                                    <div class="form-action" id="formLogin">
-                                        <label for="accoutName">Tên đăng nhập</label>
-                                        <input type="text" class="form-control" id="accoutName"
-                                            placeholder="nguyenvana">
-                                        <label for="password">Mật khẩu</label>
-                                        <input type="password" class="form-control" id="password" placeholder="password"
-                                            style="margin-bottom: 5px;">
-                                        <span id="forgotPw">Quên mật khẩu?</span>
-                                        <div class="d-flex justify-content-end">
-                                            <button class="btn btn-submit">Đăng nhập</button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <form action="">
-                                    <div class="form-action" id="formFPw">
-                                        <small>Nhập mail bạn đã đăng ký để lấy lại mật khẩu</small>
-                                        <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email"
-                                            placeholder="example@mail.com">
-                                        <div class="d-flex justify-content-end">
-                                            <button class="btn btn-submit">Gửi</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                <a id="login">Đăng nhập</a>
                             </div>
                             <div class="line-down"></div>
                             <div class="cart">
@@ -184,9 +121,11 @@
     </header>
     <main>
         <div class="logo">
-            <a href="./index.html">
-                <img src="./img/logo.png" alt="logo chonden" class="img-fluid">
-            </a>
+            <div class="container-fluid">
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="logo chonden" class="img-fluid logo">
+                </a>
+            </div>
         </div>
         <div class="slide">
             <div class="container">
@@ -236,100 +175,101 @@
                 </div>
             </div>
         </div>
+        <div class="menu">
+            <div class="container">
+                <div class="tabs">
+                    <ul>
+                        <li class="active"><a href="./index.html"><span>Chọn nhanh</span></a></li>
+                        <li><a href="./choose-details.html"><span>Chọn chi tiết</span></a></li>
+                        <li><a href=""><span>Tài liệu</span></a></li>
+                        <li><a href=""><span>Hướng dẫn</span></a></li>
+                        <li><a href="./contact.html"><span>Liên hệ</span></a></li>
+                        <li><a href=""><span></span></a></li>
+                        <li><a href=""><span></span></a></li>
+                        <li><a href=""><span></span></a></li>
+                    </ul>
+                    <div class="content">
+                        <div class="row">
+                            <section class="col-md-12 col-lg-6 quick-pick">
+                                <div class="pick-content">
+                                    <h1>Ứng dụng</h1>
+                                    <p>Đèn sẽ được lắp đặt ở đâu? Vui lòng chọn một khu vực.</p>
+                                    <select class="form-select">
+                                        <option selected>Loại ứng dụng</option>
+                                        <option value="">Phòng khách</option>
+                                        <option value="">Phòng ngủ</option>
+                                        <option value="">Ngoài trời - Sân vườn</option>
+                                        <option value="">Tầng Hầm</option>
+                                        <option value="">Phòng bếp</option>
+                                        <option value="">Phòng tắm</option>
+                                        <option value="">Nhà xưởng</option>
+                                        <option value="">Cây xăng</option>
+                                        <option value="">Phòng làm việc</option>
+                                        <option value="">Cửa hàng</option>
+                                        <option value="">Mặt dựng</option>
+                                        <option value="">Nhà ga</option>
+                                    </select>
+                                </div>
 
-        <div class="container">
-            <div class="tabs">
-                <ul>
-                    <li class="active"><a href="./index.html"><span>Chọn nhanh</span></a></li>
-                    <li><a href="./choose-details.html"><span>Chọn chi tiết</span></a></li>
-                    <li><a href=""><span>Tài liệu</span></a></li>
-                    <li><a href=""><span>Hướng dẫn</span></a></li>
-                    <li><a href="./contact.html"><span>Liên hệ</span></a></li>
-                    <li><a href=""><span></span></a></li>
-                    <li><a href=""><span></span></a></li>
-                    <li><a href=""><span></span></a></li>
-                </ul>
-                <div class="content">
-                    <div class="row">
-                        <section class="col-md-12 col-lg-6 quick-pick">
-                            <div class="pick-content">
-                                <h1>Ứng dụng</h1>
-                                <p>Đèn sẽ được lắp đặt ở đâu? Vui lòng chọn một khu vực.</p>
-                                <select class="form-select">
-                                    <option selected>Loại ứng dụng</option>
-                                    <option value="">Phòng khách</option>
-                                    <option value="">Phòng ngủ</option>
-                                    <option value="">Ngoài trời - Sân vườn</option>
-                                    <option value="">Tầng Hầm</option>
-                                    <option value="">Phòng bếp</option>
-                                    <option value="">Phòng tắm</option>
-                                    <option value="">Nhà xưởng</option>
-                                    <option value="">Cây xăng</option>
-                                    <option value="">Phòng làm việc</option>
-                                    <option value="">Cửa hàng</option>
-                                    <option value="">Mặt dựng</option>
-                                    <option value="">Nhà ga</option>
-                                </select>
+                                <div class="pick-content">
+                                    <h1>Sản phẩm bạn mong muốn?</h1>
+                                    <p>Chọn sản phẩm mà bạn quan tâm.</p>
+                                    <select class="form-select">
+                                        <option selected>Sản phẩm</option>
+                                        <option value="">Đèn Downlight</option>
+                                        <option value="">Đèn Spot Light</option>
+                                        <option value="">Đèn Track Light</option>
+                                        <option value="">Đèn Panel</option>
+                                        <option value="">Đèn Led dây</option>
+                                        <option value="">Đèn Led thanh</option>
+                                        <option value="">Bộ đèn Batten</option>
+                                        <option value="">Máng đèn công nghiệp</option>
+                                        <option value="">Bóng Led</option>
+                                        <option value="">Bóng Huỳnh Quang</option>
+                                        <option value="">Bóng Cao Áp</option>
+                                        <option value="">Đèn Highbay</option>
+                                        <option value="">Đèn Flood Light</option>
+                                        <option value="">Đèn Waterproof</option>
+                                        <option value="">Đèn Street Light</option>
+                                        <option value="">Đèn Exit & Đèn sự cố</option>
+                                        <option value="">Thiết bị điện</option>
+                                        <option value="">Phụ kiện</option>
+                                    </select>
+                                </div>
+                            </section>
+                            <section class="col-md-12 col-lg-6 quick-pick">
+                                <div class="pick-content">
+                                    <h1>Thương hiệu bạn quan tâm?</h1>
+                                    <p>Bạn muốn tập trung tìm kiếm sản phẩm của thương hiệu nào?</p>
+                                    <select class="form-select">
+                                        <option selected>Thương hiệu</option>
+                                        <option value="">Ledgoes</option>
+                                        <option value="">Philips</option>
+                                        <option value="">Ledgrand</option>
+                                        <option value="">Osram</option>
+                                        <option value="">Schneider</option>
+                                        <option value="">Kentom</option>
+                                        <option value="">Ledvance</option>
+                                        <option value="">Mennekes</option>
+                                        <option value="">Maxspid</option>
+                                    </select>
+                                </div>
+                                <div class="pick-content">
+                                    <h1>Màu sắc</h1>
+                                    <p>Chọn màu ánh sáng bạn muốn.</p>
+                                    <select class="form-select">
+                                        <option selected>Màu sắc</option>
+                                        <option value="">2800K - 3300K (Trắng Ấm)</option>
+                                        <option value="">4000K - 4500K (Trung tính)</option>
+                                        <option value="">5000K - 6500K (Trắng lạnh)</option>
+                                    </select>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-submit">Chọn</button>
                             </div>
-
-                            <div class="pick-content">
-                                <h1>Sản phẩm bạn mong muốn?</h1>
-                                <p>Chọn sản phẩm mà bạn quan tâm.</p>
-                                <select class="form-select">
-                                    <option selected>Sản phẩm</option>
-                                    <option value="">Đèn Downlight</option>
-                                    <option value="">Đèn Spot Light</option>
-                                    <option value="">Đèn Track Light</option>
-                                    <option value="">Đèn Panel</option>
-                                    <option value="">Đèn Led dây</option>
-                                    <option value="">Đèn Led thanh</option>
-                                    <option value="">Bộ đèn Batten</option>
-                                    <option value="">Máng đèn công nghiệp</option>
-                                    <option value="">Bóng Led</option>
-                                    <option value="">Bóng Huỳnh Quang</option>
-                                    <option value="">Bóng Cao Áp</option>
-                                    <option value="">Đèn Highbay</option>
-                                    <option value="">Đèn Flood Light</option>
-                                    <option value="">Đèn Waterproof</option>
-                                    <option value="">Đèn Street Light</option>
-                                    <option value="">Đèn Exit & Đèn sự cố</option>
-                                    <option value="">Thiết bị điện</option>
-                                    <option value="">Phụ kiện</option>
-                                </select>
-                            </div>
-                        </section>
-                        <section class="col-md-12 col-lg-6 quick-pick">
-                            <div class="pick-content">
-                                <h1>Thương hiệu bạn quan tâm?</h1>
-                                <p>Bạn muốn tập trung tìm kiếm sản phẩm của thương hiệu nào?</p>
-                                <select class="form-select">
-                                    <option selected>Thương hiệu</option>
-                                    <option value="">Ledgoes</option>
-                                    <option value="">Philips</option>
-                                    <option value="">Ledgrand</option>
-                                    <option value="">Osram</option>
-                                    <option value="">Schneider</option>
-                                    <option value="">Kentom</option>
-                                    <option value="">Ledvance</option>
-                                    <option value="">Mennekes</option>
-                                    <option value="">Maxspid</option>
-                                </select>
-                            </div>
-                            <div class="pick-content">
-                                <h1>Màu sắc</h1>
-                                <p>Chọn màu ánh sáng bạn muốn.</p>
-                                <select class="form-select">
-                                    <option selected>Màu sắc</option>
-                                    <option value="">2800K - 3300K (Trắng Ấm)</option>
-                                    <option value="">4000K - 4500K (Trung tính)</option>
-                                    <option value="">5000K - 6500K (Trắng lạnh)</option>
-                                </select>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="row">
-                        <div class="d-flex justify-content-end">
-                            <button class="btn btn-submit">Chọn</button>
                         </div>
                     </div>
                 </div>

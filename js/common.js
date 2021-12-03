@@ -89,7 +89,15 @@ for (var i = 0; i < thumbnails.length; i++) {
     });
 }
 
-// button left right
+// register option
+$('#role').on("change", function () {
+    var val = $(this).val();
+    console.log(val);
+    $(".types").hide().find('input:text').val('');
+    if (val) $("." + val).show();
+});
+
+//button left right
 let buttonRight = document.getElementById('slideRight');
 let buttonLeft = document.getElementById('slideLeft');
 

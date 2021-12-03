@@ -30,7 +30,7 @@
 }
 
 .logo img {
-    max-width: 50%;
+    max-width: 30%;
 }
 
 .language {
@@ -108,8 +108,8 @@
 
 .logo {
     text-align: center;
-    margin-top: 65px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .cart>a {
@@ -789,7 +789,7 @@ footer hr {
 /* contact end */
 
 /* login, register, fogot pw start */
-.user {
+/* .user {
     display: flex;
 }
 
@@ -839,7 +839,7 @@ footer hr {
 
 .user #formFPw small {
     display: block;
-}
+} */
 
 /* login, register, fogot pw end */
 
@@ -1152,3 +1152,52 @@ footer hr {
 }
 
 /* similar product end */
+
+/* register start */
+
+.register {
+    background: -webkit-linear-gradient(left, #ff620049, #FF6000);
+}
+
+.register .btn-submit {
+    width: 170px;
+}
+
+.register-wrap {
+    margin: auto;
+    width: 500px;
+    padding: 20px 50px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.register-wrap .logo {
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.register .register-form {
+    padding: 3% 10%;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+}
+
+.form-group {
+    max-width: 250px;
+}
+
+.types {
+    display: none;
+}
+
+/* .types#user {
+    display: block;
+} */
+
+/* register end */
