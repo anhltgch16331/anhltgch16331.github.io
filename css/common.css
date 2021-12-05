@@ -554,7 +554,7 @@
     box-shadow: 0px 2px 12px -2px #c9c9c9;
     position: absolute;
     bottom: 30px;
-    left: 20px;
+    left: -190px;
     background: #fff;
     z-index: 99;
     width: 200px;
@@ -789,57 +789,11 @@ footer hr {
 /* contact end */
 
 /* login, register, fogot pw start */
-/* .user {
+.user {
     display: flex;
+    white-space: nowrap;
 }
 
-.user>span {
-    margin: 0 5px;
-}
-
-.user #forgotPw,
-.user #login,
-.user #register {
-    cursor: pointer;
-}
-
-.user .form-action {
-    padding: 15px;
-    background: #fff;
-    position: absolute;
-    box-shadow: 0px 2px 12px -2px #c9c9c9;
-    width: 400px;
-    top: 34px;
-    left: 55px;
-    z-index: 99;
-    border-radius: 5px;
-    color: #000;
-    visibility: hidden;
-    transition: .2s linear;
-    opacity: 0;
-}
-
-.user .form-action label {
-    margin-top: 5px;
-}
-
-.user .form-action.active {
-    visibility: visible;
-    transition: .2s linear;
-    opacity: 1;
-}
-
-.user .form-action label {
-    color: #FF6000;
-}
-
-.user .form-action button {
-    margin-top: 20px;
-}
-
-.user #formFPw small {
-    display: block;
-} */
 
 /* login, register, fogot pw end */
 

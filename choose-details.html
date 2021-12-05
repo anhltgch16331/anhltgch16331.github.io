@@ -87,7 +87,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="top-right col-sm-12 col-lg-3">
+                        <div class="top-right col-lg-3 position-relative">
                             <!-- <div class="user">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarUser" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -95,77 +95,12 @@
                                     <span class="account-text">My Account</span>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarUser">
-                                    <li><a class="dropdown-item" href="#">Edit profile</a></li>
-                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    <li><a class="dropdown-item" href="#">Chỉnh sửa tài khoản</a></li>
+                                    <li><a class="dropdown-item" href="#" id="logout">Đăng xuất</a></li>
                                 </ul>
                             </div> -->
                             <div class="user">
-                                <span id="register">Đăng ký</span>
-                                <form action="">
-                                    <div class="form-action" id="formRegister">
-                                       
-                                        <div class="row">
-                                            <div class="col-sm-12 col-lg-6">
-                                                <label for="userName">Họ & tên</label>
-                                                <input type="text" class="form-control" id="userName"
-                                                    placeholder="Nguyễn Văn A">
-                                                <label for="email">Email</label>
-                                                <input type="email" class="form-control" id="email"
-                                                    placeholder="example@mail.com">
-                                                <label for="phone">Số điện thoại</label>
-                                                <input type="number" class="form-control" id="phone"
-                                                    placeholder="0912345678">
-                                                <label for="role">Loại tài khoản</label>
-                                                <select class="form-control" id="role">
-                                                    <option value="">Người dùng</option>
-                                                    <option value="">Đại lý</option>
-                                                    <option value="">Nhà phân phối</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-sm-12 col-lg-6">
-                                                <label for="accoutName">Tên đăng nhập</label>
-                                                <input type="text" class="form-control" id="accoutName"
-                                                    placeholder="nguyenvana">
-                                                <label for="password">Mật khẩu</label>
-                                                <input type="password" class="form-control" id="password"
-                                                    placeholder="password">
-                                                <label for="rePassword">Nhập lại mật khẩu</label>
-                                                <input type="password" class="form-control" id="rePassword"
-                                                    placeholder="re-password">
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-end">
-                                            <button class="btn btn-submit">Đăng ký</button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <span>/</span>
-                                <span id="login">Đăng nhập</span>
-                                <form action="">
-                                    <div class="form-action" id="formLogin">
-                                        <label for="accoutName">Tên đăng nhập</label>
-                                        <input type="text" class="form-control" id="accoutName"
-                                            placeholder="nguyenvana">
-                                        <label for="password">Mật khẩu</label>
-                                        <input type="password" class="form-control" id="password"
-                                            placeholder="password">
-                                        <span id="forgotPw">Quên mật khẩu?</span>
-                                        <div class="d-flex justify-content-end">
-                                            <button class="btn btn-submit">Đăng nhập</button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <form action="">
-                                    <div class="form-action" id="formFPw">
-                                        <small>Nhập mail bạn đã đăng ký để lấy lại mật khẩu</small>
-                                        <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email"
-                                            placeholder="example@mail.com">
-                                        <div class="d-flex justify-content-end">
-                                            <button class="btn btn-submit">Gửi</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                <a href="./login.html" id="login">Đăng nhập</a>
                             </div>
                             <div class="line-down"></div>
                             <div class="cart">
