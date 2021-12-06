@@ -1108,9 +1108,8 @@ footer hr {
 /* similar product end */
 
 /* register start */
-
 .register {
-    background: -webkit-linear-gradient(left, #ff620049, #FF6000);
+    background: -webkit-linear-gradient(left, #ffffff80, #000000);
 }
 
 .register .btn-submit {
@@ -1149,4 +1148,5 @@ footer hr {
 .types {
     display: none;
 }
+
 /* register end */
