@@ -96,15 +96,3 @@ $('#role').on("change", function () {
     $(".types").hide().find('input:text').val('');
     if (val) $("." + val).show();
 });
-
-//button left right
-let buttonRight = document.getElementById('slideRight');
-let buttonLeft = document.getElementById('slideLeft');
-
-buttonLeft.addEventListener('click', function () {
-    document.getElementById('slider').scrollLeft -= 200;
-});
-
-buttonRight.addEventListener('click', function () {
-    document.getElementById('slider').scrollLeft += 200;
-});
