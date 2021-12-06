@@ -1109,7 +1109,7 @@ footer hr {
 
 /* register start */
 .register {
-    background: -webkit-linear-gradient(left, #ffffff80, #000000);
+    background: -webkit-linear-gradient(right, #ffffff80, #000000);
 }
 
 .register .btn-submit {
@@ -1150,3 +1150,53 @@ footer hr {
 }
 
 /* register end */
+
+/* compare start */
+.card-delete {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.card-delete>a>i{
+    font-size: 20px;
+}
+
+.main-compare {
+    margin-bottom: 25px;
+}
+
+.box-compare {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-compare .card-img-top {
+    max-width: 358px;
+}
+
+.card-title {
+    height: 44px;
+}
+
+.main-compare .compare-element {
+    max-width: 25rem;
+}
+
+.main-compare .compare-element .card>img {
+    padding: 20px;
+}
+
+.main-compare .box-compare .card .card-body .card-text .product-detail-table tr th {
+    width: 30%;
+}
+
+.main-compare .box-compare .card .card-body .card-text .product-detail-table tr:last-child td {
+    display: inline-block;
+    text-align: start;
+}
+
+
+/* compare end */
