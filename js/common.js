@@ -96,3 +96,4 @@ $('#role').on("change", function () {
     $(".types").hide().find('input:text').val('');
     if (val) $("." + val).show();
 });
+
