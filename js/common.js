@@ -97,3 +97,7 @@ $('#role').on("change", function () {
     if (val) $("." + val).show();
 });
 
+// remove compare product
+$('.card-delete').click(function () {
+    $(this).closest('.compare-element').remove();
+});

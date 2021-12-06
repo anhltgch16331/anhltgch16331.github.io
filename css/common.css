@@ -1205,5 +1205,32 @@ footer hr {
     text-align: start;
 }
 
-
 /* compare end */
+
+/* profile start*/
+.main-profile {
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.main-profile textarea {
+    line-height: 18.7px;
+}
+
+.main-profile h3 {
+    padding-bottom: 15px;
+    border-bottom: 1px #eee solid;
+    color: #FF6000;
+}
+
+.main-profile .nav-link {
+    padding: .5rem 1rem;
+    margin-right: 5px;
+}
+
+.main-profile .sub-title {
+    display: block;
+    color: #6c757d;
+}
+
+/* profile end */
