@@ -101,3 +101,15 @@ $('#role').on("change", function () {
 $('.card-delete').click(function () {
     $(this).closest('.compare-element').remove();
 });
+
+// count compared products
+var total = 0;
+$(".container-checkbox > input").on("change", function (event) {
+    this.checked ? total++ : total--;
+    if ($('input:checked').length > 3) {
+        event.preventDefault();
+        alert('Vui lòng chọn tối đa 3 sản phẩm');
+        $(this).prop('checked', !$(this).prop('checked'));
+        total--;
+    }
+});
