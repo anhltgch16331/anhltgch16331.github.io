@@ -1234,3 +1234,44 @@ footer hr {
 }
 
 /* profile end */
+
+/* history start */
+
+.color-waiting {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.color-success {
+    color: #198754;
+    font-weight: bold;
+}
+
+.color-fail {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.buy-history {
+    width: 100%;
+}
+
+.buy-history tr th {
+    color: #FF6000;
+}
+
+.buy-history tr td {
+    padding: 10px 0;
+    margin-right: 15px;
+}
+
+.buy-history .btn {
+    font-size: 14px;
+}
+
+.buy-history .btn-submit {
+    padding: 5px 18px;
+    white-space: nowrap;
+}
+
+/* history end */

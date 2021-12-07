@@ -17,6 +17,64 @@
         order: 2;
         margin-top: 25px;
     }
+
+    .buy-history {
+        border: 1px solid #ddd;
+    }
+
+    .buy-history tr {
+        border: #ddd 1px solid;
+    }
+
+    .buy-history tr th,
+    .buy-history tr td {
+        padding: 12px 15px;
+        font-size: 15px;
+        vertical-align: top;
+    }
+
+    .buy-history tr th {
+        display: none;
+    }
+
+    .buy-history tr td{
+        display: inline-block;
+    }
+
+    .buy-history tr td::before {
+        font-weight: bold;
+        color: #000;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .buy-history tr td:nth-of-type(1)::before {
+        content: '#';
+    }
+
+    .buy-history tr td:nth-of-type(2)::before {
+        content: 'Mã đơn hàng:';
+    }
+
+    .buy-history tr td:nth-of-type(3)::before {
+        content: 'Ngày đặt hàng:';
+    }
+
+    .buy-history tr td:nth-of-type(4)::before {
+        content: 'Địa chỉ nhận hàng:';
+    }
+
+    .buy-history tr td:nth-of-type(5)::before {
+        content: 'Ghi chú:';
+    }
+
+    .buy-history tr td:nth-of-type(6)::before {
+        content: 'Tổng tiền:';
+    }
+
+    .buy-history tr td:nth-of-type(7)::before {
+        content: 'Trạng thái:';
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -47,7 +105,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* md */
 @media screen and (max-width: 768px) {
-    .check-note{
+    .check-note {
         left: 0;
     }
 
