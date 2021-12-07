@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <div class="top-right col-lg-3">
-                            <!-- <div class="user">
+                            <div class="user">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarUser" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fas fa-user"></i>
@@ -98,10 +98,10 @@
                                     <li><a class="dropdown-item" href="./profile.html">Chỉnh sửa tài khoản</a></li>
                                     <li><a class="dropdown-item" href="./index.html" id="logout">Đăng xuất</a></li>
                                 </ul>
-                            </div> -->
-                            <div class="user">
-                                <a href="./login.html" id="login">Đăng nhập</a>
                             </div>
+                            <!-- <div class="user">
+                                <a href="./login.html" id="login">Đăng nhập</a>
+                            </div> -->
                             <div class="line-down"></div>
                             <div class="cart">
                                 <a href="./checkout.html">
@@ -141,191 +141,134 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">So sánh</li>
+                    <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
                 </ol>
             </div>
         </nav>
         <!-- breadcrumb end-->
-        <section class="main-compare">
+        <section class="main-checkout">
             <div class="container">
-                <div class="box-compare">
-                    <div class="compare-element">
-                        <div class="card">
-                            <div class="card-delete">
-                                <i class="fas fa-times-circle"></i>
-                            </div>
-                            <img src="./img/product/product1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h1 class="card-title">ĐÈN SIMPLITZ PANEL OSRAM</h1>
-                                <div class="card-text">
-                                    <table class="product-detail-table">
-                                        <tr>
-                                            <th>Mã sản phẩm:</th>
-                                            <td>LEDGOES LGCL</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Điện áp:</th>
-                                            <td>220V - 240V</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Góc chiếu:</th>
-                                            <td>160o</td>
-                                        </tr>
-                                        <tr>
-                                            <th>IP:</th>
-                                            <td>20</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Đui:</th>
-                                            <td>E27</td>
-                                        </tr>
-                                        <tr>
-                                            <th>CRI:</th>
-                                            <td>>80</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Tuổi thọ:</th>
-                                            <td>15000h</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Đóng gói:</th>
-                                            <td>100 hộp/thùng</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Bảo hành:</th>
-                                            <td>24 tháng</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Công suất:</th>
-                                            <td>6W, 9W, 12W</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Màu ánh sáng:</th>
-                                            <td>3000K (Trắng ấm), 6500K (Trắng lạnh)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <a href="./product-detail.html" class="float-end">Xem chi tiết</a>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-9">
+                        <form action="">
+                            <table class="checkout-table">
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th></th>
+                                    <th>Đơn giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Số tiền</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./img/product/product1.png" alt="">
+                                    </td>
+                                    <td>
+                                        <h3>ĐÈN LED DOWNLIGHT ÂM TRẦN LEDGOES</h3>
+                                        <p>Công suất: 9W</p>
+                                        <p>Màu sắc: 6400K (Trắng ấm)</p>
+                                    </td>
+                                    <td>24.000 VNĐ</td>
+                                    <td>
+                                        <input type="number" class="form-control" name="" value="4">
+                                    </td>
+                                    <td>96.000 VNĐ</td>
+                                    <td>
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./img/product/product2.png" alt="">
+                                    </td>
+                                    <td>
+                                        <h3>ĐÈN SIMPLITZ FLOOD LIGHT V2 OSRAM</h3>
+                                        <p>Công suất: 9W</p>
+                                        <p>Màu sắc: 6400K (Trắng ấm)</p>
+                                    </td>
+                                    <td>24.000 VNĐ</td>
+                                    <td>
+                                        <input type="number" class="form-control" name="" value="4">
+                                    </td>
+                                    <td>96.000 VNĐ</td>
+                                    <td>
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./img/product/product3.png" alt="">
+                                    </td>
+                                    <td>
+                                        <h3>ĐÈN LED DOWNLIGHT ÂM TRẦN LEDGOES</h3>
+                                        <p>Công suất: 9W</p>
+                                        <p>Màu sắc: 6400K (Trắng ấm)</p>
+                                    </td>
+                                    <td>24.000 VNĐ</td>
+                                    <td>
+                                        <input type="number" class="form-control" name="" value="1">
+                                    </td>
+                                    <td>96.000 VNĐ</td>
+                                    <td>
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./img/product/product4.png" alt="">
+                                    </td>
+                                    <td>
+                                        <h3>ĐÈN SIMPLITZ FLOOD LIGHT V2 OSRAM</h3>
+                                        <p>Công suất: 9W</p>
+                                        <p>Màu sắc: 6400K (Trắng ấm)</p>
+                                    </td>
+                                    <td>24.000 VNĐ</td>
+                                    <td>
+                                        <input type="number" class="form-control" name="" value="4">
+                                    </td>
+                                    <td>96.000 VNĐ</td>
+                                    <td>
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./img/product/product1.png" alt="">
+                                    </td>
+                                    <td>
+                                        <h3>ĐÈN LED DOWNLIGHT ÂM TRẦN LEDGOES</h3>
+                                        <p>Công suất: 9W</p>
+                                        <p>Màu sắc: 6400K (Trắng ấm)</p>
+                                    </td>
+                                    <td>24.000 VNĐ</td>
+                                    <td>
+                                        <input type="number" class="form-control" name="" value="2">
+                                    </td>
+                                    <td>96.000 VNĐ</td>
+                                    <td>
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
                     </div>
-                    <div class="compare-element">
-                        <div class="card">
-                            <div class="card-delete">
-                                <i class="fas fa-times-circle"></i>
-                            </div>
-                            <img src="./img/product/product2.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h1 class="card-title">ĐÈN LEDTOUCH DOWNLIGHT LDTH DL OSRAM</h1>
-                                <div class="card-text">
-                                    <table class="product-detail-table">
-                                        <tr>
-                                            <th>Mã sản phẩm:</th>
-                                            <td>LEDGOES LGCL</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Điện áp:</th>
-                                            <td>220V - 240V</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Góc chiếu:</th>
-                                            <td>160o</td>
-                                        </tr>
-                                        <tr>
-                                            <th>IP:</th>
-                                            <td>20</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Đui:</th>
-                                            <td>E27</td>
-                                        </tr>
-                                        <tr>
-                                            <th>CRI:</th>
-                                            <td>>80</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Tuổi thọ:</th>
-                                            <td>15000h</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Đóng gói:</th>
-                                            <td>100 hộp/thùng</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Bảo hành:</th>
-                                            <td>24 tháng</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Công suất:</th>
-                                            <td>6W, 9W, 12W</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Màu ánh sáng:</th>
-                                            <td>3000K (Trắng ấm), 6500K (Trắng lạnh)</td>
-                                        </tr>
-                                    </table>
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="sub-checkout">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Tổng đơn hàng</h3>
+                                    <div class="card-text">
+                                        <h3>Mã sản phẩm</h3>
+                                        <p># LEDGOES LGCL</p>
+                                        <p># OSRAM PSS SHP R V2L</p>
+                                        <p># LEDGOES DOWNLIGHT</p>
+                                        <p># OSRAM LDTH DL</p>
+                                        <p># OSRAM SIM FL V2</p>
+                                    </div>
+                                    <h2 class="card-total mb-4">Tổng thanh toán: 4.800.000 VNĐ</h2>
+                                    <a href="#" class="btn btn-submit w-100">ĐẶT HÀNG</a>
                                 </div>
-                                <a href="./product-detail.html" class="float-end">Xem chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="compare-element">
-                        <div class="card">
-                            <div class="card-delete">
-                                <i class="fas fa-times-circle"></i>
-                            </div>
-                            <img src="./img/product/product3.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h1 class="card-title">ĐÈN LED TUÝP ST8A OSRAM</h1>
-                                <div class="card-text">
-                                    <table class="product-detail-table">
-                                        <tr>
-                                            <th>Mã sản phẩm:</th>
-                                            <td>LEDGOES LGCL</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Điện áp:</th>
-                                            <td>220V - 240V</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Góc chiếu:</th>
-                                            <td>160o</td>
-                                        </tr>
-                                        <tr>
-                                            <th>IP:</th>
-                                            <td>20</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Đui:</th>
-                                            <td>E27</td>
-                                        </tr>
-                                        <tr>
-                                            <th>CRI:</th>
-                                            <td>>80</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Tuổi thọ:</th>
-                                            <td>15000h</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Đóng gói:</th>
-                                            <td>100 hộp/thùng</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Bảo hành:</th>
-                                            <td>24 tháng</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Công suất:</th>
-                                            <td>6W, 9W, 12W</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Màu ánh sáng:</th>
-                                            <td>3000K (Trắng ấm), 6500K (Trắng lạnh)</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <a href="./product-detail.html" class="float-end">Xem chi tiết</a>
                             </div>
                         </div>
                     </div>

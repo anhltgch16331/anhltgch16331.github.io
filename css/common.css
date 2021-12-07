@@ -851,18 +851,18 @@ footer hr {
     margin-bottom: 0;
 }
 
-.product-detail-table .quantity {
+.quantity {
     display: flex;
     align-items: center;
     text-align: center;
 }
 
-.product-detail-table .quantity span::before {
+.quantity span::before {
     line-height: 30px;
 }
 
-.product-detail-table .quantity #minus-quantity,
-.product-detail-table .quantity #plus-quantity {
+.quantity #minus-quantity,
+.quantity #plus-quantity {
     background: #fff;
     height: 30px;
     width: 30px;
@@ -872,13 +872,13 @@ footer hr {
     color: #FF6000;
 }
 
-.product-detail-table .quantity #minus-quantity:hover,
-.product-detail-table .quantity #plus-quantity:hover {
+.quantity #minus-quantity:hover,
+.quantity #plus-quantity:hover {
     background: #FF6000;
     color: #fff;
 }
 
-.product-detail-table .quantity input[type='number'] {
+.quantity input[type='number'] {
     height: 30px;
     width: 50px;
     border-radius: 0;
@@ -1311,6 +1311,13 @@ footer hr {
     text-transform: uppercase;
     transform: rotate(15deg);
     margin-top: 20px;
+    box-shadow: 4px 4px 10px 2px #ec5959;
+    transition: .2s linear;
+    cursor: default;
+}
+
+.sale:hover {
+    transform: rotate(30deg);
 }
 
 .sale::before {
@@ -1343,3 +1350,65 @@ footer hr {
 }
 
 /* product sale end */
+
+/* checkout start */
+
+.checkout-table {
+    width: 100%;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.checkout-table tr th {
+    color: #FF6000;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.checkout-table tr td {
+    padding-top: 15px;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+}
+
+.checkout-table tr td h3 {
+    font-weight: bold;
+}
+
+.checkout-table tr td img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    padding: 15px;
+}
+
+.checkout-table tr td input[type="number"] {
+    max-width: 70px;
+}
+
+i.fas.fa-times-circle,
+i.fas.fa-times {
+    cursor: pointer;
+}
+
+i.fas.fa-times:hover {
+    color: #FF6000;
+}
+
+.sub-checkout .card-text {}
+
+.sub-checkout .card-title {
+    height: auto;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-checkout .card-total {
+    padding-top: 10px;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+}
+
+/* checkout end */
