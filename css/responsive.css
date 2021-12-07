@@ -37,7 +37,7 @@
         display: none;
     }
 
-    .buy-history tr td{
+    .buy-history tr td {
         display: inline-block;
     }
 
@@ -80,6 +80,10 @@
 /* Large devices (laptops/desktops, 992px and up) */
 /* lg */
 @media screen and (max-width: 992px) {
+    .product-name>a {
+        font-size: 20px;
+    }
+
     .header-wrap {
         display: flex;
     }
@@ -122,6 +126,14 @@
 /* Small devices (portrait tablets and large phones, 576px and up) */
 /* sm */
 @media screen and (max-width: 576px) {
+    .main-detail .product-detail-table tr:last-child td {
+        font-size: 14px;
+    }
+
+    .main-detail .product-detail-table .new-price{
+        left: 85px;
+    }
+
     .search-wrap .btn-search {
         padding: 0 15px;
     }

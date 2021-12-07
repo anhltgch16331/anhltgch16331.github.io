@@ -108,7 +108,7 @@ $(".container-checkbox > input").on("change", function (event) {
     this.checked ? total++ : total--;
     if ($('input:checked').length > 3) {
         event.preventDefault();
-        alert('Vui lòng chọn tối đa 3 sản phẩm');
+        // alert('Vui lòng chọn tối đa 3 sản phẩm');
         $(this).prop('checked', !$(this).prop('checked'));
         total--;
     }

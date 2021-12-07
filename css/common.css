@@ -342,6 +342,9 @@
 
 .product-element .product-name {
     font-size: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .product-element .product-name>a {
@@ -581,8 +584,8 @@
     width: 850px;
     box-shadow: 0px 2px 12px -2px #c9c9c9;
     padding: 50px;
-    display: none;
     font-size: 14px;
+    display: none;
 }
 
 .product-detail>table {
@@ -819,7 +822,19 @@ footer hr {
 }
 
 .product-detail-table {
+    overflow-x: hidden;
     width: 100%;
+}
+
+.main-detail .product-detail-table tr:last-child td {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 15px;
+    position: relative;
+}
+
+.product-detail-table select {
+    max-width: 39%;
 }
 
 .product-detail-table tr td {
@@ -836,18 +851,18 @@ footer hr {
     margin-bottom: 0;
 }
 
-.product-detail-table tr:last-child td {
+.product-detail-table .quantity {
     display: flex;
     align-items: center;
     text-align: center;
 }
 
-.product-detail-table tr:last-child td span::before {
+.product-detail-table .quantity span::before {
     line-height: 30px;
 }
 
-.product-detail-table tr td #minus-quantity,
-.product-detail-table tr td #plus-quantity {
+.product-detail-table .quantity #minus-quantity,
+.product-detail-table .quantity #plus-quantity {
     background: #fff;
     height: 30px;
     width: 30px;
@@ -857,13 +872,13 @@ footer hr {
     color: #FF6000;
 }
 
-.product-detail-table tr td #minus-quantity:hover,
-.product-detail-table tr td #plus-quantity:hover {
+.product-detail-table .quantity #minus-quantity:hover,
+.product-detail-table .quantity #plus-quantity:hover {
     background: #FF6000;
     color: #fff;
 }
 
-.product-detail-table tr:last-child td input[type='number'] {
+.product-detail-table .quantity input[type='number'] {
     height: 30px;
     width: 50px;
     border-radius: 0;
@@ -1275,3 +1290,56 @@ footer hr {
 }
 
 /* history end */
+
+/* product sale start*/
+
+.sale {
+    background: #dc3545;
+    color: #fff;
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-top-left-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    padding-left: 25px;
+    display: inline-block;
+    margin-left: 25px;
+    text-transform: uppercase;
+    transform: rotate(15deg);
+    margin-top: 20px;
+}
+
+.sale::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 8px;
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.new-price {
+    color: #fff;
+    position: absolute;
+    left: 123px;
+    top: 0;
+    padding: 10px 20px;
+    background: #dc3545;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+/* product sale end */
