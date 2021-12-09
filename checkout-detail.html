@@ -141,76 +141,131 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Thông tin</li>
+                    <li class="breadcrumb-item"><a href="./checkout.html">Giỏ hàng</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Chi tiết đơn hàng</li>
                 </ol>
             </div>
         </nav>
         <!-- breadcrumb end-->
-        <section class="main-profile">
+        <section class="main-checkout">
             <div class="container">
-                <div class="row flex-lg-nowrap">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="e-profile">
-                                    <ul class="nav nav-tabs">
-                                        <li class="nav-item">
-                                            <a href="./profile.html" class="nav-link">Cài đặt</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="./history.html" class="active nav-link">Lịch sử mua hàng</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content pt-3">
-                                        <div class="tab-pane active">
-                                            <form class="form">
-                                                <table class="buy-history">
-                                                    <tr>
-                                                        <th style="width: 3%;">#</th>
-                                                        <th style="width: 10%;">Mã đơn hàng</th>
-                                                        <th style="width: 12%;">Ngày đặt hàng</th>
-                                                        <th style="width: 30%;">Địa chỉ nhận hàng</th>
-                                                        <th style="width: 10%;">Ghi chú</th>
-                                                        <th style="width: 12%;">Tổng tiền</th>
-                                                        <th style="width: 13%;">Trạng thái</th>
-                                                        <th style="width: 15%;"></th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>MDH000001</td>
-                                                        <td>7/12/2021</td>
-                                                        <td>Số 8, Tôn Thất Thuyết, Mỹ Đình, Cầu Giấy, Hà Nội</td>
-                                                        <td>Thêm ớt</td>
-                                                        <td><span>20.000.000</span> VNĐ</td>
-                                                        <td class="color-waiting">Chờ xác nhận</td>
-                                                        <td><button class="btn btn-submit">Xem chi tiết</button></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>MDH000002</td>
-                                                        <td>8/12/2021</td>
-                                                        <td>Số 8, Tôn Thất Thuyết, Mỹ Đình, Cầu Giấy, Hà Nội</td>
-                                                        <td></td>
-                                                        <td><span>50.000.000</span> VNĐ</td>
-                                                        <td class="color-success">Thành công</td>
-                                                        <td><button class="btn btn-submit">Xem chi tiết</button></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>MDH000003</td>
-                                                        <td>10/12/2021</td>
-                                                        <td>Số 8, Tôn Thất Thuyết, Mỹ Đình, Cầu Giấy, Hà Nội</td>
-                                                        <td>Bỏ ớt</td>
-                                                        <td><span>100.000.000</span> VNĐ</td>
-                                                        <td class="color-fail">Không thành công</td>
-                                                        <td><button class="btn btn-submit">Xem chi tiết</button></td>
-                                                    </tr>
-                                                </table>
-                                            </form>
-                                        </div>
-                                    </div>
+                <div class="row">
+                    <div class="col-12">
+                        <form action="">
+                            <table class="checkout-table">
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th></th>
+                                    <th>Đơn giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Số tiền</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./img/product/product1.png" alt="">
+                                    </td>
+                                    <td>
+                                        <h3>ĐÈN LED DOWNLIGHT ÂM TRẦN LEDGOES</h3>
+                                        <p>Công suất: 9W</p>
+                                        <p>Màu sắc: 6400K (Trắng ấm)</p>
+                                    </td>
+                                    <td>24.000 VNĐ</td>
+                                    <td>
+                                        <input type="number" class="form-control" name="" value="4">
+                                    </td>
+                                    <td>96.000 VNĐ</td>
+                                    <td>
+                                        <i class="fas fa-times action-delete"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./img/product/product2.png" alt="">
+                                    </td>
+                                    <td>
+                                        <h3>ĐÈN SIMPLITZ FLOOD LIGHT V2 OSRAM</h3>
+                                        <p>Công suất: 9W</p>
+                                        <p>Màu sắc: 6400K (Trắng ấm)</p>
+                                    </td>
+                                    <td>24.000 VNĐ</td>
+                                    <td>
+                                        <input type="number" class="form-control" name="" value="4">
+                                    </td>
+                                    <td>96.000 VNĐ</td>
+                                    <td>
+                                        <i class="fas fa-times action-delete"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./img/product/product3.png" alt="">
+                                    </td>
+                                    <td>
+                                        <h3>ĐÈN LED DOWNLIGHT ÂM TRẦN LEDGOES</h3>
+                                        <p>Công suất: 9W</p>
+                                        <p>Màu sắc: 6400K (Trắng ấm)</p>
+                                    </td>
+                                    <td>24.000 VNĐ</td>
+                                    <td>
+                                        <input type="number" class="form-control" name="" value="1">
+                                    </td>
+                                    <td>96.000 VNĐ</td>
+                                    <td>
+                                        <i class="fas fa-times action-delete"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./img/product/product4.png" alt="">
+                                    </td>
+                                    <td>
+                                        <h3>ĐÈN SIMPLITZ FLOOD LIGHT V2 OSRAM</h3>
+                                        <p>Công suất: 9W</p>
+                                        <p>Màu sắc: 6400K (Trắng ấm)</p>
+                                    </td>
+                                    <td>24.000 VNĐ</td>
+                                    <td>
+                                        <input type="number" class="form-control" name="" value="4">
+                                    </td>
+                                    <td>96.000 VNĐ</td>
+                                    <td>
+                                        <i class="fas fa-times action-delete"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./img/product/product1.png" alt="">
+                                    </td>
+                                    <td>
+                                        <h3>ĐÈN LED DOWNLIGHT ÂM TRẦN LEDGOES</h3>
+                                        <p>Công suất: 9W</p>
+                                        <p>Màu sắc: 6400K (Trắng ấm)</p>
+                                    </td>
+                                    <td>24.000 VNĐ</td>
+                                    <td>
+                                        <input type="number" class="form-control" name="" value="2">
+                                    </td>
+                                    <td>96.000 VNĐ</td>
+                                    <td>
+                                        <i class="fas fa-times action-delete"></i>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                        <div class="total-wrap">
+                            <div class="pay-wrap">
+                                <div class="address">
+                                    <h2></h2>
                                 </div>
+                                <div class="total-pay-wrap">
+                                    <h2 class="card-amount">Tổng thanh toán: (<span>5</span> sản phẩm): </h2>
+                                    <h2 class="card-total"><span>4.800.000</span>₫</h2>
+                                </div>
+                                <small class="note">Đại lý/NPP sẽ được hưởng ưu đãi, chiết khấu khi đăng ký doanh nghiệp
+                                    <a href="./profile.html">tại đây</a> </small>
                             </div>
+                            <a href="#" class="btn btn-submit">ĐẶT HÀNG</a>
                         </div>
                     </div>
                 </div>

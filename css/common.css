@@ -1098,6 +1098,8 @@ footer hr {
     box-shadow: 0px 2px 12px -2px #c9c9c9;
     display: inline-block;
     margin-left: 1%;
+    height: 300px;
+    position: relative;
 }
 
 .similar-product-mobile a img,
@@ -1107,6 +1109,7 @@ footer hr {
 
 .similar-product-mobile .carousel-item,
 .similar-product-desktop .carousel-item {
+    padding: 5px 0;
     text-align: center;
 }
 
@@ -1122,6 +1125,21 @@ footer hr {
     width: 3%;
     color: #FF6000;
     font-size: 18px;
+}
+
+.sub-title-product {
+    max-width: 250px;
+    margin-bottom: 0;
+}
+
+/* .img-wrap {
+    max-width: 250px;
+    max-height: 217px;
+    object-fit: cover;
+} */
+
+.carousel-caption{
+    color: #000;
 }
 
 /* similar product end */
@@ -1246,7 +1264,7 @@ footer hr {
 }
 
 .main-profile textarea {
-    line-height: 18.7px;
+    line-height: 14px;
 }
 
 .main-profile h3 {
@@ -1336,11 +1354,16 @@ footer hr {
     right: -55px;
 }
 
-.sale:hover {
+
+/* .sale:hover {
     transform: rotate(40deg);
     transform-origin: 17px 12px;
     transition: transform .5s;
 }
+
+.product-preview .sale:hover {
+    transform-origin: 23px 12px;
+} */
 
 .sale::before {
     content: '';
@@ -1359,10 +1382,6 @@ footer hr {
 .product-preview .sale {
     top: 15px;
     right: 70px;
-}
-
-.product-preview .sale:hover {
-    transform-origin: 23px 12px;
 }
 
 .compare-img .sale {
@@ -1479,6 +1498,11 @@ h2.card-total {
 .checkout-table .action-delete:hover::after {
     visibility: visible;
     opacity: 1;
+}
+
+.address {
+    display: flex;
+    align-items: center;
 }
 
 /* checkout end */
