@@ -1138,7 +1138,7 @@ footer hr {
     object-fit: cover;
 } */
 
-.carousel-caption{
+.carousel-caption {
     color: #000;
 }
 
@@ -1346,7 +1346,7 @@ footer hr {
     margin-top: 20px; */
     text-transform: uppercase;
     transform: rotate(15deg);
-    box-shadow: 4px 4px 10px 2px #ec5959;
+    box-shadow: 3px 4px 13px -2px #ec5959;
     transition: .2s linear;
     cursor: default;
     position: absolute;
@@ -1385,8 +1385,8 @@ footer hr {
 }
 
 .compare-img .sale {
-    top: 45px;
-    right: -50px;
+    top: 50px;
+    right: 14px;
 }
 
 .old-price {
@@ -1505,15 +1505,42 @@ h2.card-total {
     align-items: center;
 }
 
-.delivery-information tr td{
+.delivery-information tr td {
     border: none;
 }
+
 .delivery-information tr td textarea,
-.delivery-information tr td input{
+.delivery-information tr td input {
     max-width: 80%;
 }
-.delivery-information tr td input[type="number"]{
+
+.delivery-information tr td input[type="number"] {
     max-width: 80%;
 }
 
 /* checkout end */
+
+/* document start */
+
+.document-element {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.document-element:hover .document-title {
+    color: #FF6000;
+}
+
+.document-element>img {
+    max-width: 205px;
+    max-height: 285px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.document-element .document-title {
+    font-weight: bold;
+}
+
+/* document end */
