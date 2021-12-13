@@ -1445,6 +1445,11 @@ i.fas.fa-times-circle,
     cursor: pointer;
 }
 
+.checkout-table .new-price{
+    padding: 0;
+    font-size: unset;
+}
+
 /* .sub-checkout .card-text {} */
 .total-wrap {
     display: flex;
