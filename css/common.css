@@ -1505,4 +1505,15 @@ h2.card-total {
     align-items: center;
 }
 
+.delivery-information tr td{
+    border: none;
+}
+.delivery-information tr td textarea,
+.delivery-information tr td input{
+    max-width: 80%;
+}
+.delivery-information tr td input[type="number"]{
+    max-width: 80%;
+}
+
 /* checkout end */
