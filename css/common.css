@@ -366,25 +366,25 @@
     margin-left: 115px;
 }
 
-#product-list {
+.product-list {
     width: 100%;
 }
 
-#product-list tr th {
+.product-list tr th {
     color: #FF6000;
     width: 25%;
     /* border-bottom: #ddd 1px solid; */
 }
 
-#product-list tr:first-child td {
+.product-list tr:first-child td {
     padding-top: 10px;
 }
 
-#product-list tr td {
+.product-list tr td {
     color: #000;
 }
 
-#product-list tr td input[type='number'] {
+.product-list tr td input[type='number'] {
     height: 30px;
     border: 1px solid #e8e8e8;
     width: 55px;
