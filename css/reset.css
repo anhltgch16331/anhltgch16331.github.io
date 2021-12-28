@@ -164,3 +164,11 @@ input[type=number] {
 }
 
 /* Custom Scrollbar end */
+
+textarea:focus{
+    outline: none !important;
+}
+
+b{
+    color: #000;
+}

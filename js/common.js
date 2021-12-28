@@ -113,3 +113,11 @@ $(".container-checkbox > input").on("change", function (event) {
         total--;
     }
 });
+
+// check check-out
+function checkToggle(e) {
+    checkboxes = document.getElementsByName('check');
+    for (var i = 0, n = checkboxes.length; i < n; i++) {
+        checkboxes[i].checked = e.checked;
+    }
+}
